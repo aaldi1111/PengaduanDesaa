@@ -10,10 +10,10 @@ public class AplikasiPengaduan {
     static int nomorBerikut = 1;
 
     public static void main(String[] args) {
-        daftarPengguna.add(new Warga("1101", "Budi ", "111", "Pahlawan"));
-        daftarPengguna.add(new Warga("1102", "Cecep ", "112", "Kedaton"));
-        daftarPengguna.add(new Kepaladusun("1201", "Pak Asep", "122", "Pahlawan"));
-        daftarPengguna.add(new Kepaladusun("1202", "Pak Yanto", "123", "Kedaton"));
+        daftarPengguna.add(new Warga("111", "Budi ", "111", "Pahlawan"));
+        daftarPengguna.add(new Warga("112", "Cecep ", "112", "Kedaton"));
+        daftarPengguna.add(new Kepaladusun("121", "Pak Asep", "122", "Pahlawan"));
+        daftarPengguna.add(new Kepaladusun("122", "Pak Yanto", "123", "Kedaton"));
         daftarPengguna.add(new Perangkatdesa("1991", "Pak Sukri", "199", "Sekretaris Desa"));
 
         System.out.println("=== SISTEM PENGADUAN & ASPIRASI MASYARAKAT DESA ===");
@@ -178,7 +178,7 @@ public class AplikasiPengaduan {
             return;
         }
         p.tampilkan();
-        System.out.print("Setujui? (y/n): ");
+        System.out.print("Setujui? (ya/tidak): ");
         String jawab = sc.nextLine();
         if (jawab.equalsIgnoreCase("y")) {
             p.setStatus(Pengaduan.DIVERIFIKASI);
