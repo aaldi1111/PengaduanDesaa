@@ -1,6 +1,5 @@
 package com.mycompany.pengaduandesaa;
 
-/** Class untuk satu laporan pengaduan/aspirasi. */
 public class Pengaduan {
     public static final String MENUNGGU = "Menunggu Verifikasi";
     public static final String DIVERIFIKASI = "Diverifikasi";
